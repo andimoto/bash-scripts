@@ -16,6 +16,15 @@
 # NOTE: This is the original script which was written from scratch. No guarantee that everything is working. Over the 
 # time I've modified this script (but not on my computer :D) to fit my needs. 
 
+# Execution: ./rbuild.sh <project dir> <target>
+# <project dir> is the directory itself. not the inside of the directory. for example: your projects makefile is in 
+# /home/user/projekt/Makefile you need to provide /home/user/project to rbuild.sh. 
+# example: 
+#    cd /home/user
+#    rbuild.sh project target_static_analysis
+#
+# provide rbuild.sh to your $PATH to access it 
+
 ##################################
 ##	    Settings	       	##
 ##################################
