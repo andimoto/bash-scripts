@@ -79,7 +79,7 @@ fi
 cd $DOWNLOAD_PATH
 pwd
 CLIPBOARD=`xclip -out`
-echo "hole '$CLOPBOARD' von youtube..."
+echo "hole '$CLIPBOARD' von youtube..."
 
 # run command
 youtube-dl --no-playlist -o "%(title)s.%(ext)s" $YTDL_ARGS $CLIPBOARD
