@@ -90,7 +90,7 @@ then
 	echo "FERTIG! | READY!"
 
 	$APP_PATH/$ZENITY_APP --info --width=300 \
-		--text "Musik erfolgreich von Youtube nach \n'$DOWNLOAD_PATH' geladen!" 2> /dev/null
+		--text "Titel erfolgreich von Youtube nach \n'$DOWNLOAD_PATH' geladen!" 2> /dev/null
 
 else
 # youtube-dl was not successful. either the link is missing or wrong
@@ -104,7 +104,7 @@ else
 			$SU_EXEC pip install $YTDL
 	else
 		$APP_PATH/$ZENITY_APP --error --width=300 \
-			--text "FEHLER! Musik kann nicht geladen werden" 2> /dev/null
+			--text "FEHLER! Titel kann nicht geladen werden" 2> /dev/null
 		exit 0
 	fi
 
